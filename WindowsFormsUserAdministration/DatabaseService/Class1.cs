@@ -43,7 +43,7 @@ namespace DatabaseService
         public void UpdateUsers(User oUser)
         {
             //string = "Data Source=193.198.57.183; Initial Catalog = DotNet; User ID = vjezbe; Password = vjezbe";
-            string sSqlConnectionString = ConfigurationManager.AppSettings["SqlConnectionString"];
+            string sSqlConnectionString = ConfigurationManager.AppSettings["SqlConnectionString"];//System.Configuration se dodaje u DatabaseService
             using (DbConnection oConnection = new SqlConnection(sSqlConnectionString))
             using (DbCommand oCommand = oConnection.CreateCommand())
                 //using- pozivanjem ove naredbe iskorištena memorija nakon korištenja se oslobađa
