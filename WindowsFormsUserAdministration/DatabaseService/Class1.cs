@@ -17,7 +17,7 @@ namespace DatabaseService
         public List<User> GetUsers()
         {
             List<User> lUsers = new List<User>();
-            string sSqlConnectionString = "Data Source=193.198.57.183; Initial Catalog = DotNet; User ID = vjezbe; Password = vjezbe";
+            string sSqlConnectionString = ConfigurationManager.AppSettings["SqlConnectionString"];
             using (DbConnection oConnection = new SqlConnection(sSqlConnectionString))
             using (DbCommand oCommand = oConnection.CreateCommand())
             {
@@ -42,7 +42,6 @@ namespace DatabaseService
         }
         public void UpdateUsers(User oUser)
         {
-            //string = "Data Source=193.198.57.183; Initial Catalog = DotNet; User ID = vjezbe; Password = vjezbe";
             string sSqlConnectionString = ConfigurationManager.AppSettings["SqlConnectionString"];//System.Configuration se dodaje u DatabaseService
             using (DbConnection oConnection = new SqlConnection(sSqlConnectionString))
             using (DbCommand oCommand = oConnection.CreateCommand())
@@ -61,3 +60,11 @@ namespace DatabaseService
 }
 
 //trace.writeline (ispiše dolje negdje 'output')
+
+
+
+
+
+
+
+    //<appSettings><add key ="SqlConnectionString" value ="Data Source=193.198.57.183; Initial Catalog = DotNet; User ID = vjezbe; Password = vjezbe"/></appSettings>
