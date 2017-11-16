@@ -5,11 +5,15 @@ using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Configuration;
+
 
 namespace DatabaseService
 {
     public class Crud
     {
+        
+
         public List<User> GetUsers()
         {
             List<User> lUsers = new List<User>();
@@ -38,7 +42,8 @@ namespace DatabaseService
         }
         public void UpdateUsers(User oUser)
         {
-            string sSqlConnectionString = "Data Source=193.198.57.183; Initial Catalog = DotNet; User ID = vjezbe; Password = vjezbe";
+            //string = "Data Source=193.198.57.183; Initial Catalog = DotNet; User ID = vjezbe; Password = vjezbe";
+            string sSqlConnectionString = ConfigurationManager.AppSettings["SqlConnectionString"];
             using (DbConnection oConnection = new SqlConnection(sSqlConnectionString))
             using (DbCommand oCommand = oConnection.CreateCommand())
                 //using- pozivanjem ove naredbe iskorištena memorija nakon korištenja se oslobađa
