@@ -1,0 +1,5 @@
+C:\Users\Korisnik\Desktop\UserAdministration\UserAdministration-master\WindowsFormsUserAdministration\DatabaseService\bin\Debug\DatabaseService.dll
+C:\Users\Korisnik\Desktop\UserAdministration\UserAdministration-master\WindowsFormsUserAdministration\DatabaseService\bin\Debug\DatabaseService.pdb
+C:\Users\Korisnik\Desktop\UserAdministration\UserAdministration-master\WindowsFormsUserAdministration\DatabaseService\obj\Debug\DatabaseService.csprojResolveAssemblyReference.cache
+C:\Users\Korisnik\Desktop\UserAdministration\UserAdministration-master\WindowsFormsUserAdministration\DatabaseService\obj\Debug\DatabaseService.dll
+C:\Users\Korisnik\Desktop\UserAdministration\UserAdministration-master\WindowsFormsUserAdministration\DatabaseService\obj\Debug\DatabaseService.pdb
