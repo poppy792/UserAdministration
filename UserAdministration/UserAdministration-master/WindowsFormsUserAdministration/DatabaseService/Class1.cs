@@ -58,13 +58,11 @@ namespace DatabaseService
         }
         public void DeleteUsers(User oUser)
         {
-            string sSqlConnectionString = ConfigurationManager.AppSettings["SqlConnectionString"];//System.Configuration se dodaje u DatabaseService
+            string sSqlConnectionString = ConfigurationManager.AppSettings["SqlConnectionString"];
             using (DbConnection oConnection = new SqlConnection(sSqlConnectionString))
             using (DbCommand oCommand = oConnection.CreateCommand())
-            //using- pozivanjem ove naredbe iskorištena memorija nakon korištenja se oslobađa
             {
                 oCommand.CommandText = "DELETE FROM users WHERE USER_ID = '" + oUser.nUserID +"'";
-                //kombinacija stringa sa varijablama kako bi smo popunili sql naredbe za promjene u bazi podataka (za string '' u sql)
                 oConnection.Open();
                 using (DbDataReader oReader = oCommand.ExecuteReader())
                 {
@@ -74,13 +72,11 @@ namespace DatabaseService
         }
         public void AddUsers(User oUser)
         {
-            string sSqlConnectionString = ConfigurationManager.AppSettings["SqlConnectionString"];//System.Configuration se dodaje u DatabaseService
+            string sSqlConnectionString = ConfigurationManager.AppSettings["SqlConnectionString"];
             using (DbConnection oConnection = new SqlConnection(sSqlConnectionString))
             using (DbCommand oCommand = oConnection.CreateCommand())
-            //using- pozivanjem ove naredbe iskorištena memorija nakon korištenja se oslobađa
             {
                 oCommand.CommandText = "INSERT INTO users (USERNAME, PASSWORD, NAME, SURNAME) VALUES ('" + oUser.sUserName + "', '"+ oUser.sUserPassword + "', '"+ oUser.sUserFirstName + "', '"+ oUser.sUserLastName + "');";
-                //kombinacija stringa sa varijablama kako bi smo popunili sql naredbe za promjene u bazi podataka (za string '' u sql)
                 oConnection.Open();
                 using (DbDataReader oReader = oCommand.ExecuteReader())
                 {

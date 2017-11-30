@@ -3,3 +3,8 @@ C:\Users\Korisnik\Desktop\UserAdministration\UserAdministration-master\WindowsFo
 C:\Users\Korisnik\Desktop\UserAdministration\UserAdministration-master\WindowsFormsUserAdministration\DatabaseService\obj\Debug\DatabaseService.csprojResolveAssemblyReference.cache
 C:\Users\Korisnik\Desktop\UserAdministration\UserAdministration-master\WindowsFormsUserAdministration\DatabaseService\obj\Debug\DatabaseService.dll
 C:\Users\Korisnik\Desktop\UserAdministration\UserAdministration-master\WindowsFormsUserAdministration\DatabaseService\obj\Debug\DatabaseService.pdb
+D:\Barbara Strapac\UserAdministration2\UserAdministration\UserAdministration-master\WindowsFormsUserAdministration\DatabaseService\bin\Debug\DatabaseService.dll
+D:\Barbara Strapac\UserAdministration2\UserAdministration\UserAdministration-master\WindowsFormsUserAdministration\DatabaseService\bin\Debug\DatabaseService.pdb
+D:\Barbara Strapac\UserAdministration2\UserAdministration\UserAdministration-master\WindowsFormsUserAdministration\DatabaseService\obj\Debug\DatabaseService.csprojResolveAssemblyReference.cache
+D:\Barbara Strapac\UserAdministration2\UserAdministration\UserAdministration-master\WindowsFormsUserAdministration\DatabaseService\obj\Debug\DatabaseService.dll
+D:\Barbara Strapac\UserAdministration2\UserAdministration\UserAdministration-master\WindowsFormsUserAdministration\DatabaseService\obj\Debug\DatabaseService.pdb

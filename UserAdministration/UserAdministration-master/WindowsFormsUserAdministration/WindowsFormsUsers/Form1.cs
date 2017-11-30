@@ -24,13 +24,13 @@ namespace WindowsFormsUsers
 
             //programsko dodavanje kolona u data grid 
             DataGridViewImageColumn oEditButton = new DataGridViewImageColumn();//nova kolona koja je tipa "image"
-            oEditButton.Image = Image.FromFile("C:/Users/Korisnik/Desktop/UserAdministration/UserAdministration-master/WindowsFormsUserAdministration/WindowsFormsUsers/Contact.png");
+            oEditButton.Image = Image.FromFile("D:/Barbara Strapac/pencil.png");
             oEditButton.Width = 20;
             oEditButton.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
             dataGridViewUsers.Columns.Add(oEditButton);
 
             DataGridViewImageColumn oDeleteButton = new DataGridViewImageColumn();//nova kolona koja je tipa "image"
-            oDeleteButton.Image = Image.FromFile("C:/Users/Korisnik/Desktop/UserAdministration/UserAdministration-master/WindowsFormsUserAdministration/WindowsFormsUsers/rash.png");
+            oDeleteButton.Image = Image.FromFile("D:/Barbara Strapac/trash.png");
             oDeleteButton.Width = 20;
             oDeleteButton.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
             dataGridViewUsers.Columns.Add(oDeleteButton);            dataGridViewUsers.AutoGenerateColumns = false; //program nam neće sam posložiti kolone            //ako je true, kolone nam se mogu pobrkati
