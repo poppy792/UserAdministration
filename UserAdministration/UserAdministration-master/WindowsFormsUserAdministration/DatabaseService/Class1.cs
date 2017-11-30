@@ -17,7 +17,8 @@ namespace DatabaseService
         public List<User> GetUsers()
         {
             List<User> lUsers = new List<User>();
-            string sSqlConnectionString = ConfigurationManager.AppSettings["SqlConnectionString"];
+            // string sSqlConnectionString = ConfigurationManager.AppSettings["SqlConnectionString"];
+            String sSqlConnectionString = ConfigurationManager.ConnectionStrings["DbConnection"].ConnectionString;
             using (DbConnection oConnection = new SqlConnection(sSqlConnectionString))
             using (DbCommand oCommand = oConnection.CreateCommand())
             {
@@ -42,7 +43,8 @@ namespace DatabaseService
         }
         public void UpdateUsers(User oUser)
         {
-            string sSqlConnectionString = ConfigurationManager.AppSettings["SqlConnectionString"];//System.Configuration se dodaje u DatabaseService
+            // string sSqlConnectionString = ConfigurationManager.AppSettings["SqlConnectionString"];//System.Configuration se dodaje u DatabaseService
+            String sSqlConnectionString =  ConfigurationManager.ConnectionStrings["DbConnection"].ConnectionString;
             using (DbConnection oConnection = new SqlConnection(sSqlConnectionString))
             using (DbCommand oCommand = oConnection.CreateCommand())
                 //using- pozivanjem ove naredbe iskorištena memorija nakon korištenja se oslobađa
@@ -58,7 +60,8 @@ namespace DatabaseService
         }
         public void DeleteUsers(User oUser)
         {
-            string sSqlConnectionString = ConfigurationManager.AppSettings["SqlConnectionString"];
+            // string sSqlConnectionString = ConfigurationManager.AppSettings["SqlConnectionString"];
+            String sSqlConnectionString = ConfigurationManager.ConnectionStrings["DbConnection"].ConnectionString;
             using (DbConnection oConnection = new SqlConnection(sSqlConnectionString))
             using (DbCommand oCommand = oConnection.CreateCommand())
             {
@@ -72,7 +75,8 @@ namespace DatabaseService
         }
         public void AddUsers(User oUser)
         {
-            string sSqlConnectionString = ConfigurationManager.AppSettings["SqlConnectionString"];
+            // string sSqlConnectionString = ConfigurationManager.AppSettings["SqlConnectionString"];
+            String sSqlConnectionString = ConfigurationManager.ConnectionStrings["DbConnection"].ConnectionString;
             using (DbConnection oConnection = new SqlConnection(sSqlConnectionString))
             using (DbCommand oCommand = oConnection.CreateCommand())
             {
