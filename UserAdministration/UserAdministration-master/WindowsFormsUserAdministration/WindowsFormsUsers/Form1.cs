@@ -33,7 +33,8 @@ namespace WindowsFormsUsers
             oDeleteButton.Image = Image.FromFile("D:/Barbara Strapac/trash.png");
             oDeleteButton.Width = 20;
             oDeleteButton.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
-            dataGridViewUsers.Columns.Add(oDeleteButton);            dataGridViewUsers.AutoGenerateColumns = false; //program nam neće sam posložiti kolone            //ako je true, kolone nam se mogu pobrkati
+            dataGridViewUsers.Columns.Add(oDeleteButton);            dataGridViewUsers.AutoGenerateColumns = false; //program nam neće sam posložiti kolone
+            dataGridViewUsers.ColumnHeadersDefaultCellStyle.BackColor=Color.Lavender;            dataGridViewUsers.EnableHeadersVisualStyles = false;            //ako je true, kolone nam se mogu pobrkati
         }
 
         private void dataGridViewUsers_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -65,6 +66,42 @@ namespace WindowsFormsUsers
         }
 
         private void btnAdd_Click(object sender, EventArgs e)
+        {
+            AddUser AddNewUser = new AddUser(this);
+            AddNewUser.Show();
+        }
+
+        private void btnSearch_Click(object sender, EventArgs e)
+        {
+            Crud Crud = new Crud();
+            List<User> lUser = Crud.SearchUsers(inptSearchUsers.Text);
+            /* string sSearch = inptSearchUsers.Text;
+             var ContainsQuery = from c in lUser where c.sUserName.Contains(inptSearchUsers.Text) select c;
+             List<User> lContainFilteredUsers = ContainsQuery.ToList();
+             for (int i = 0; i < lContainFilteredUsers.Count; i++)
+             {
+                 dataGridViewUsers.DataSource = lContainFilteredUsers;
+             }*/
+            dataGridViewUsers.DataSource = lUser;
+
+        }
+
+        private void izlazToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+             Application.Exit();
+        }
+
+        private void oProgramuToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+             MessageBox.Show("Created by Majstorica Barbara \n Version 1.2.1 \n Author Barbarica d.o.o \n Year 2017.");
+        }
+
+        private void izlazToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void noviKorisnikToolStripMenuItem_Click(object sender, EventArgs e)
         {
             AddUser AddNewUser = new AddUser(this);
             AddNewUser.Show();

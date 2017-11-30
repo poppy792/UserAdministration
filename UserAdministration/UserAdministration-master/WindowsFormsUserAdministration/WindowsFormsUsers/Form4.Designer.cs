@@ -28,13 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AddUser));
             this.lblText = new System.Windows.Forms.Label();
-            this.lblNewID = new System.Windows.Forms.Label();
             this.lblNewUserName = new System.Windows.Forms.Label();
             this.lblNewPassword = new System.Windows.Forms.Label();
             this.lblNewFirstName = new System.Windows.Forms.Label();
             this.lblNewLastName = new System.Windows.Forms.Label();
-            this.inptNewID = new System.Windows.Forms.TextBox();
             this.inptNewUserName = new System.Windows.Forms.TextBox();
             this.inptNewPassword = new System.Windows.Forms.TextBox();
             this.inptNewFirstName = new System.Windows.Forms.TextBox();
@@ -46,20 +45,11 @@
             // 
             this.lblText.AutoSize = true;
             this.lblText.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.lblText.Location = new System.Drawing.Point(62, 22);
+            this.lblText.Location = new System.Drawing.Point(73, 49);
             this.lblText.Name = "lblText";
             this.lblText.Size = new System.Drawing.Size(182, 20);
             this.lblText.TabIndex = 0;
-            this.lblText.Text = "Dodajte novog korisnika.";
-            // 
-            // lblNewID
-            // 
-            this.lblNewID.AutoSize = true;
-            this.lblNewID.Location = new System.Drawing.Point(44, 78);
-            this.lblNewID.Name = "lblNewID";
-            this.lblNewID.Size = new System.Drawing.Size(24, 13);
-            this.lblNewID.TabIndex = 1;
-            this.lblNewID.Text = "ID: ";
+            this.lblText.Text = "Dodajte novog korisnika:";
             // 
             // lblNewUserName
             // 
@@ -96,13 +86,6 @@
             this.lblNewLastName.Size = new System.Drawing.Size(50, 13);
             this.lblNewLastName.TabIndex = 5;
             this.lblNewLastName.Text = "Prezime: ";
-            // 
-            // inptNewID
-            // 
-            this.inptNewID.Location = new System.Drawing.Point(125, 75);
-            this.inptNewID.Name = "inptNewID";
-            this.inptNewID.Size = new System.Drawing.Size(119, 20);
-            this.inptNewID.TabIndex = 6;
             // 
             // inptNewUserName
             // 
@@ -152,13 +135,12 @@
             this.Controls.Add(this.inptNewFirstName);
             this.Controls.Add(this.inptNewPassword);
             this.Controls.Add(this.inptNewUserName);
-            this.Controls.Add(this.inptNewID);
             this.Controls.Add(this.lblNewLastName);
             this.Controls.Add(this.lblNewFirstName);
             this.Controls.Add(this.lblNewPassword);
             this.Controls.Add(this.lblNewUserName);
-            this.Controls.Add(this.lblNewID);
             this.Controls.Add(this.lblText);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "AddUser";
             this.Text = "Dodavanje korisnika";
             this.ResumeLayout(false);
@@ -169,12 +151,10 @@
         #endregion
 
         private System.Windows.Forms.Label lblText;
-        private System.Windows.Forms.Label lblNewID;
         private System.Windows.Forms.Label lblNewUserName;
         private System.Windows.Forms.Label lblNewPassword;
         private System.Windows.Forms.Label lblNewFirstName;
         private System.Windows.Forms.Label lblNewLastName;
-        private System.Windows.Forms.TextBox inptNewID;
         private System.Windows.Forms.TextBox inptNewUserName;
         private System.Windows.Forms.TextBox inptNewPassword;
         private System.Windows.Forms.TextBox inptNewFirstName;

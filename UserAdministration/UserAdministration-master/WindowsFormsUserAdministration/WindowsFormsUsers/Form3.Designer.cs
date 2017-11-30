@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DeleteUser));
             this.btnCancel = new System.Windows.Forms.Button();
             this.btnDelete = new System.Windows.Forms.Button();
             this.lblDelete = new System.Windows.Forms.Label();
@@ -72,6 +73,7 @@
             this.Controls.Add(this.lblDelete);
             this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.btnCancel);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "DeleteUser";
             this.Text = "Obriši korisnika";
             this.ResumeLayout(false);

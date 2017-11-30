@@ -71,6 +71,7 @@
             this.lblEditID.Size = new System.Drawing.Size(55, 17);
             this.lblEditID.TabIndex = 2;
             this.lblEditID.Text = "User ID";
+            this.lblEditID.Visible = false;
             // 
             // lblEditName
             // 
@@ -144,7 +145,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(642, 440);
+            this.ClientSize = new System.Drawing.Size(545, 372);
             this.Controls.Add(this.btnEditUser);
             this.Controls.Add(this.btnEditCancel);
             this.Controls.Add(this.inptEditPassword);

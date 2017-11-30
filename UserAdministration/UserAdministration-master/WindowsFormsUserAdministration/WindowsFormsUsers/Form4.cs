@@ -23,7 +23,7 @@ namespace WindowsFormsUsers
         private void btnAddNewUser_Click(object sender, EventArgs e)
         {
             User oUser = new User();
-            oUser.nUserID = Int32.Parse(inptNewID.Text);
+           // oUser.nUserID = Int32.Parse(inptNewID.Text);//automatski se unosi userID jer je on primarni ključ u bazi podataka
             oUser.sUserFirstName = inptNewFirstName.Text;
             oUser.sUserLastName = inptNewLastName.Text;
             oUser.sUserPassword = inptNewPassword.Text;
